@@ -96,6 +96,35 @@
   
   html {
     scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  /* Add custom font styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  /* Custom cursor */
+  .custom-cursor {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: hsl(var(--primary));
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: transform 0.1s ease;
+  }
+
+  body:hover .custom-cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  a:hover ~ .custom-cursor,
+  button:hover ~ .custom-cursor {
+    transform: translate(-50%, -50%) scale(3);
   }
 }
 
@@ -105,7 +134,7 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-6 tracking-tight;
+    @apply text-3xl md:text-4xl font-bold mb-6 tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent;
   }
   
   .section-subtitle {
@@ -122,5 +151,85 @@
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-background/60 border-border/50 border rounded-xl shadow-sm;
+  }
+
+  /* Project card styling */
+  .project-card {
+    @apply backdrop-blur-md bg-background/60 border border-border/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Skill bar animation */
+  .skill-bar {
+    @apply h-2 bg-secondary rounded-full relative overflow-hidden;
+  }
+
+  .skill-progress {
+    @apply h-full bg-primary rounded-full absolute top-0 left-0 transform -translate-x-full transition-transform duration-1000;
+  }
+
+  .skill-progress.animate {
+    @apply translate-x-0;
+  }
+
+  /* Timeline styling */
+  .timeline-item {
+    @apply relative pl-8 pb-10 last:pb-0;
+  }
+
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-0 top-2 w-4 h-4 rounded-full bg-primary z-10;
+  }
+
+  .timeline-item::after {
+    content: '';
+    @apply absolute left-1.5 top-6 w-0.5 h-full bg-border;
+  }
+
+  .timeline-item:last-child::after {
+    @apply h-0;
+  }
+
+  /* Blog card styling */
+  .blog-card {
+    @apply backdrop-blur-md bg-background/60 border border-border/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Testimonial card styling */
+  .testimonial-card {
+    @apply backdrop-blur-md bg-background/60 border border-border/50 rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+}
+
+/* Parallax effects */
+@layer utilities {
+  .parallax {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transform: translateZ(0);
+  }
+
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Glassmorphism UI */
+  .glass {
+    @apply backdrop-blur-md bg-white/10 dark:bg-black/20 border border-white/20 dark:border-white/10;
   }
 }

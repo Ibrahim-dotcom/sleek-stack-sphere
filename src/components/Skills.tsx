@@ -1,10 +1,12 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Card } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    id: 1,
+    id: "frontend",
     title: "Frontend Development",
     skills: [
       { name: "HTML", level: 90 },
@@ -18,7 +20,7 @@ const skillCategories = [
     ],
   },
   {
-    id: 2,
+    id: "backend",
     title: "Backend Development",
     skills: [
       { name: "Node.js", level: 85 },
@@ -32,7 +34,7 @@ const skillCategories = [
     ],
   },
   {
-    id: 3,
+    id: "tools",
     title: "Tools & Platforms",
     skills: [
       { name: "Git", level: 90 },
@@ -46,6 +48,50 @@ const skillCategories = [
     ],
   },
 ];
+
+const SkillBar = ({ name, level }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const skillRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (skillRef.current) {
+      observer.observe(skillRef.current);
+    }
+
+    return () => {
+      if (skillRef.current) {
+        observer.disconnect();
+      }
+    };
+  }, []);
+
+  return (
+    <div ref={skillRef} className="mb-4">
+      <div className="flex justify-between mb-1">
+        <span className="text-sm font-medium">{name}</span>
+        <span className="text-sm text-muted-foreground">{level}%</span>
+      </div>
+      <div className="skill-bar">
+        <motion.div
+          className="h-full bg-primary rounded-full"
+          initial={{ width: 0 }}
+          animate={isVisible ? { width: `${level}%` } : { width: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        />
+      </div>
+    </div>
+  );
+};
 
 const Skills = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -72,37 +118,42 @@ const Skills = () => {
   }, []);
   
   return (
-    <section id="skills" className="py-16 md:py-24 bg-secondary/50">
+    <section id="skills" className="py-16 md:py-24 relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-40 right-10 w-72 h-72 bg-primary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl"></div>
+      </div>
+      
       <div className="section-container">
-        <div ref={sectionRef} className="animate-on-scroll">
+        <div ref={sectionRef} className="animate-on-scroll relative z-10">
           <h2 className="section-title">My Skills</h2>
           <p className="section-subtitle">
-            Here's a list of my skills and technologies that I've been working with recently
+            Here's an overview of my technical skills and proficiency levels
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Tabs defaultValue="frontend" className="w-full">
+            <TabsList className="grid grid-cols-3 max-w-md mx-auto mb-8">
+              {skillCategories.map((category) => (
+                <TabsTrigger key={category.id} value={category.id} className="text-sm">
+                  {category.title}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            
             {skillCategories.map((category) => (
-              <Card key={category.id} className="p-6">
-                <h3 className="text-xl font-bold mb-4">{category.title}</h3>
-                <div className="space-y-4">
-                  {category.skills.map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <div className="h-2 bg-secondary rounded-full">
-                        <div 
-                          className="h-2 bg-primary rounded-full" 
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Card>
+              <TabsContent key={category.id} value={category.id} className="space-y-4">
+                <Card className="p-6 glass-card">
+                  <h3 className="text-xl font-bold mb-6">{category.title}</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                    {category.skills.map((skill) => (
+                      <SkillBar key={skill.name} name={skill.name} level={skill.level} />
+                    ))}
+                  </div>
+                </Card>
+              </TabsContent>
             ))}
-          </div>
+          </Tabs>
         </div>
       </div>
     </section>
