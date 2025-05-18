@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { cn } from '@/lib/utils';
-import { Moon, Sun, FileText } from 'lucide-react';
+import { Moon, Sun, FileText, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -88,13 +88,14 @@ const Nav = () => {
               </a>
             ))}
             
-            <Button variant="outline" size="sm" className="ml-2 relative overflow-hidden group" asChild>
-              <a href="/resume.pdf" download="john_doe_resume.pdf">
-                <FileText className="h-4 w-4 mr-2" />
-                <span className="relative z-10">Resume</span>
-                <span className="absolute inset-0 bg-primary/10 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </a>
-            </Button>
+            <a
+              href="/ibrahim_olawale_resume.pdf"
+              download="ibrahim_olawale_resume.pdf"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+            >
+              <Download className="h-4 w-4 mr-2" />
+              <span className="relative z-10">Resume</span>
+            </a>
 
             {/* Theme toggle */}
             {mounted && (
@@ -186,11 +187,12 @@ const Nav = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
-              download="john_doe_resume.pdf"
-              className="block px-3 py-2 text-base font-medium hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
+              href="/ibrahim_olawale_resume.pdf"
+              download="ibrahim_olawale_resume.pdf"
+              className="flex items-center px-3 py-2 text-base font-medium hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Download className="h-4 w-4 mr-2" />
               Download Resume
             </a>
             <a

@@ -12,6 +12,7 @@ import Testimonials from '@/components/Testimonials';
 import Blog from '@/components/Blog';
 import ProjectCaseStudies from '@/components/ProjectCaseStudies';
 import Timeline from '@/components/Timeline';
+import ResumeViewer from '@/components/ResumeViewer';
 
 const Index = () => {
   const { theme, setTheme } = useTheme();
@@ -60,6 +61,7 @@ const Index = () => {
       <Projects />
       <ProjectCaseStudies />
       <Skills />
+      <ResumeViewer />
       <Testimonials />
       <Blog />
       <Contact />

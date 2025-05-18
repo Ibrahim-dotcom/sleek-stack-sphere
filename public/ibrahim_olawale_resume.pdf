@@ -1,0 +1,560 @@
+
+%PDF-1.3
+%����
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 2
+/Kids [ 4 0 R 5 0 R ] 
+>>
+endobj
+3 0 obj
+<<
+/Type /Outlines
+/Count 0
+>>
+endobj
+4 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F2 7 0 R
+/F3 8 0 R
+>>
+/XObject <<
+>>
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/MediaBox [ 0 0 612 792 ]
+/Contents 9 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F2 7 0 R
+/F3 8 0 R
+>>
+/XObject <<
+>>
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/MediaBox [ 0 0 612 792 ]
+/Contents 10 0 R
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /AAAAAA+Inter-Regular
+/Encoding /Identity-H
+/DescendantFonts [ 11 0 R ]
+/ToUnicode 12 0 R
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+Inter-Bold
+/Encoding /Identity-H
+/DescendantFonts [ 13 0 R ]
+/ToUnicode 14 0 R
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/Subtype /Type0
+/BaseFont /CAAAAA+Inter-Italic
+/Encoding /Identity-H
+/DescendantFonts [ 15 0 R ]
+/ToUnicode 16 0 R
+>>
+endobj
+9 0 obj
+<< /Length 17 0 R >>
+stream
+BT
+/F2 18 Tf
+1 0 0 1 230 730 Tm
+(IBRAHIM OLAWALE) Tj
+/F1 11 Tf
+1 0 0 1 150 710 Tm
+(Frontend & Full Stack Developer | React, Django, Python, JavaScript) Tj
+1 0 0 1 100 695 Tm
+(Lagos, Nigeria | ibrahimolawale580@gmail.com | GitHub | LinkedIn) Tj
+1 0 0 1 50 670 Tm
+(SUMMARY) Tj
+/F1 10 Tf
+1 0 0 1 50 650 Tm
+(Results-driven Full Stack Developer with 4+ years of professional experience building high-impact web applications) Tj
+1 0 0 1 50 635 Tm
+(using React, Django, JavaScript, and Python. Proven expertise in delivering scalable software, intuitive user) Tj
+1 0 0 1 50 620 Tm
+(interfaces, and robust backend systems. Passionate about crafting clean, efficient code and delivering business) Tj
+1 0 0 1 50 605 Tm
+(value through modern software engineering practices.) Tj
+/F2 11 Tf
+1 0 0 1 50 580 Tm
+(TECHNICAL SKILLS) Tj
+/F1 10 Tf
+1 0 0 1 70 565 Tm
+(Frontend: React.js, JavaScript \(ES6+\), TypeScript, Redux, Tailwind CSS, Bootstrap, HTML5, CSS3, Vite) Tj
+1 0 0 1 70 550 Tm
+(Backend: Python, Django REST Framework, Node.js, MySQL, PostgreSQL) Tj
+1 0 0 1 70 535 Tm
+(DevOps/Tools: Git, GitHub, Docker, Postman, VSCode) Tj
+1 0 0 1 70 520 Tm
+(Others: REST APIs, Server-Sent Events \(SSE\), Responsive Design, Agile, Web3) Tj
+/F2 11 Tf
+1 0 0 1 50 495 Tm
+(PROFESSIONAL EXPERIENCE) Tj
+/F2 10 Tf
+1 0 0 1 50 480 Tm
+(Adroit Solutions Ltd – Lagos, Nigeria) Tj
+/F2 10 Tf
+1 0 0 1 50 465 Tm
+(Full Stack Developer) Tj
+/F3 10 Tf
+1 0 0 1 50 450 Tm
+(March 2023 – Present) Tj
+/F1 10 Tf
+1 0 0 1 70 435 Tm
+(• Led frontend development for complex business web apps using React, TailwindCSS, and Bootstrap.) Tj
+1 0 0 1 70 420 Tm
+(• Designed and implemented scalable backend APIs using Django and Django REST Framework.) Tj
+1 0 0 1 70 405 Tm
+(• Developed and integrated real-time transaction features using Server-Sent Events \(SSE\) for) Tj
+1 0 0 1 75 390 Tm
+(seamless frontend-backend synchronization.) Tj
+1 0 0 1 70 375 Tm
+(• Worked closely with product teams to translate UI/UX wireframes into responsive,) Tj
+1 0 0 1 75 360 Tm
+(high-performance web pages.) Tj
+1 0 0 1 70 345 Tm
+(• Built reusable React components, reducing development time by 30%.) Tj
+1 0 0 1 70 330 Tm
+(• Maintained and optimized MySQL and PostgreSQL databases for performance and scalability.) Tj
+1 0 0 1 70 315 Tm
+(• Used Git and GitHub for version control and participated in Agile sprints and daily standups.) Tj
+/F2 10 Tf
+1 0 0 1 50 290 Tm
+(Freelance Software Developer – Remote) Tj
+/F2 10 Tf
+1 0 0 1 50 275 Tm
+(Full Stack Developer) Tj
+/F3 10 Tf
+1 0 0 1 50 260 Tm
+(Jan 2021 – Feb 2023) Tj
+/F1 10 Tf
+1 0 0 1 70 245 Tm
+(• Built multiple custom web applications for small businesses using React and Django.) Tj
+1 0 0 1 70 230 Tm
+(• Developed an internal document search engine using C# and implemented efficient search indexing.) Tj
+1 0 0 1 70 215 Tm
+(• Designed API integrations with third-party services, ensuring data security and speed.) Tj
+1 0 0 1 70 200 Tm
+(• Delivered production-ready UIs with full responsiveness and user-focused interfaces.) Tj
+1 0 0 1 70 185 Tm
+(• Consulted clients on system architecture, performance, and usability.) Tj
+/F2 11 Tf
+1 0 0 1 50 160 Tm
+(PROJECTS) Tj
+/F2 10 Tf
+1 0 0 1 50 145 Tm
+(Dynamic ETL Tool \(React + Django + PostgreSQL\)) Tj
+/F1 10 Tf
+1 0 0 1 70 130 Tm
+(• Built a fully functional ETL platform with a React frontend and Django backend.) Tj
+1 0 0 1 70 115 Tm
+(• Users can extract from databases/APIs/files, apply transformations, and load to destinations.) Tj
+1 0 0 1 70 100 Tm
+(• Features include custom condition builders, column mapping, connection manager, and live job tracking.) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Length 18 0 R >>
+stream
+BT
+/F2 10 Tf
+1 0 0 1 50 730 Tm
+(AI Clothing Design App \(Stable Diffusion + React + Django\)) Tj
+/F1 10 Tf
+1 0 0 1 70 715 Tm
+(• Designed an AI-powered fashion design platform for generating African attire designs.) Tj
+1 0 0 1 70 700 Tm
+(• Integrated Stable Diffusion model for text-to-image generation of custom clothing styles.) Tj
+1 0 0 1 70 685 Tm
+(• Implemented image gallery, prompt management, and download/export functionality.) Tj
+/F2 10 Tf
+1 0 0 1 50 660 Tm
+(SQL Visual Query Builder) Tj
+/F1 10 Tf
+1 0 0 1 70 645 Tm
+(• Created a drag-and-drop SQL builder with table relations, graphical joins, and real-time query generation.) Tj
+1 0 0 1 70 630 Tm
+(• Integrated with MySQL/PostgreSQL and displayed results using react-bootstrap-table-next.) Tj
+/F2 10 Tf
+1 0 0 1 50 605 Tm
+(VoIP Secure Communication System \(Java\)) Tj
+/F1 10 Tf
+1 0 0 1 70 590 Tm
+(• Designed and evaluated a secure VoIP system with DatagramSocket3 simulation to study) Tj
+1 0 0 1 75 575 Tm
+(real-world packet delays and loss.) Tj
+1 0 0 1 70 560 Tm
+(• Built custom packet authentication mechanism from scratch without third-party libraries.) Tj
+/F2 10 Tf
+1 0 0 1 50 535 Tm
+(Personal Portfolio Website \(Coming Soon\)) Tj
+/F1 10 Tf
+1 0 0 1 70 520 Tm
+(• Modern React-based portfolio featuring live demos, interactive project cards, and professional branding.) Tj
+1 0 0 1 70 505 Tm
+(• Will showcase blog articles, GitHub contributions, and contact form integration.) Tj
+/F2 11 Tf
+1 0 0 1 50 480 Tm
+(EDUCATION) Tj
+/F2 10 Tf
+1 0 0 1 50 465 Tm
+(B.Sc. Computer Science) Tj
+/F1 10 Tf
+1 0 0 1 50 450 Tm
+(University Of Lagos \(UNILAG\) – Nigeria) Tj
+/F3 10 Tf
+1 0 0 1 50 435 Tm
+(Expected Graduation: 2024, July) Tj
+/F2 11 Tf
+1 0 0 1 50 410 Tm
+(CERTIFICATIONS & COURSES) Tj
+/F1 10 Tf
+1 0 0 1 70 395 Tm
+(• Responsive Web Design – freeCodeCamp) Tj
+1 0 0 1 70 380 Tm
+(• JavaScript Algorithms & Data Structures – freeCodeCamp) Tj
+1 0 0 1 70 365 Tm
+(• Django for APIs – Udemy) Tj
+/F2 11 Tf
+1 0 0 1 50 340 Tm
+(ADDITIONAL INFORMATION) Tj
+/F1 10 Tf
+1 0 0 1 70 325 Tm
+(• Open to remote, hybrid, or onsite opportunities globally.) Tj
+1 0 0 1 70 310 Tm
+(• Passionate about solving real-world problems with code.) Tj
+1 0 0 1 70 295 Tm
+(• Currently exploring Blockchain & Web3 technologies.) Tj
+/F3 10 Tf
+1 0 0 1 200 260 Tm
+("Code with intention, build with purpose.") Tj
+ET
+endstream
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /AAAAAA+Inter-Regular
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/FontDescriptor 19 0 R
+/DW 500
+/W [ 0 [ 612 731 731 267 271 375 573 623 ] ]
+/CIDToGIDMap 20 0 R
+>>
+endobj
+12 0 obj
+<< /Length 21 0 R >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0000> <0000>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+13 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /BAAAAA+Inter-Bold
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/FontDescriptor 22 0 R
+/DW 500
+/W [ 0 [ 612 731 731 267 271 375 573 623 ] ]
+/CIDToGIDMap 23 0 R
+>>
+endobj
+14 0 obj
+<< /Length 24 0 R >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0000> <0000>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+15 0 obj
+<<
+/Type /Font
+/Subtype /CIDFontType2
+/BaseFont /CAAAAA+Inter-Italic
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+>>
+/FontDescriptor 25 0 R
+/DW 500
+/W [ 0 [ 612 731 731 267 271 375 573 623 ] ]
+/CIDToGIDMap 26 0 R
+>>
+endobj
+16 0 obj
+<< /Length 27 0 R >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo <<
+/Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfchar
+<0000> <0000>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+17 0 obj
+3355
+endobj
+18 0 obj
+1687
+endobj
+19 0 obj
+<<
+/Type /FontDescriptor
+/FontName /AAAAAA+Inter-Regular
+/Flags 4
+/ItalicAngle 0
+/Ascent 968
+/Descent -241
+/CapHeight 727
+/StemV 80
+/Leading 0
+/XHeight 538
+/AvgWidth 565
+/MaxWidth 1202
+/FontFile2 28 0 R
+>>
+endobj
+20 0 obj
+<< /Length 29 0 R >>
+stream
+   �   �   �   �   �   �   �   �
+endstream
+endobj
+21 0 obj
+346
+endobj
+22 0 obj
+<<
+/Type /FontDescriptor
+/FontName /BAAAAA+Inter-Bold
+/Flags 4
+/ItalicAngle 0
+/Ascent 968
+/Descent -241
+/CapHeight 727
+/StemV 80
+/Leading 0
+/XHeight 538
+/AvgWidth 565
+/MaxWidth 1202
+/FontFile2 30 0 R
+>>
+endobj
+23 0 obj
+<< /Length 31 0 R >>
+stream
+   �   �   �   �   �   �   �   �
+endstream
+endobj
+24 0 obj
+346
+endobj
+25 0 obj
+<<
+/Type /FontDescriptor
+/FontName /CAAAAA+Inter-Italic
+/Flags 4
+/ItalicAngle -10
+/Ascent 968
+/Descent -241
+/CapHeight 727
+/StemV 80
+/Leading 0
+/XHeight 538
+/AvgWidth 565
+/MaxWidth 1202
+/FontFile2 32 0 R
+>>
+endobj
+26 0 obj
+<< /Length 33 0 R >>
+stream
+   �   �   �   �   �   �   �   �
+endstream
+endobj
+27 0 obj
+346
+endobj
+28 0 obj
+<< /Length 34 0 R >>
+stream
+[sample binary data for Inter-Regular font - this would be the actual font data]
+endstream
+endobj
+29 0 obj
+8
+endobj
+30 0 obj
+<< /Length 35 0 R >>
+stream
+[sample binary data for Inter-Bold font - this would be the actual font data]
+endstream
+endobj
+31 0 obj
+8
+endobj
+32 0 obj
+<< /Length 36 0 R >>
+stream
+[sample binary data for Inter-Italic font - this would be the actual font data]
+endstream
+endobj
+33 0 obj
+8
+endobj
+34 0 obj
+74
+endobj
+35 0 obj
+71
+endobj
+36 0 obj
+73
+endobj
+xref
+0 37
+0000000000 65535 f
+0000000015 00000 n
+0000000085 00000 n
+0000000153 00000 n
+0000000202 00000 n
+0000000412 00000 n
+0000000623 00000 n
+0000000775 00000 n
+0000000925 00000 n
+0000001077 00000 n
+0000004488 00000 n
+0000006231 00000 n
+0000006481 00000 n
+0000006883 00000 n
+0000007131 00000 n
+0000007533 00000 n
+0000007784 00000 n
+0000008186 00000 n
+0000008208 00000 n
+0000008230 00000 n
+0000008454 00000 n
+0000008518 00000 n
+0000008539 00000 n
+0000008760 00000 n
+0000008824 00000 n
+0000008845 00000 n
+0000009073 00000 n
+0000009137 00000 n
+0000009158 00000 n
+0000009316 00000 n
+0000009335 00000 n
+0000009490 00000 n
+0000009509 00000 n
+0000009666 00000 n
+0000009685 00000 n
+0000009705 00000 n
+0000009725 00000 n
+trailer
+<<
+/Size 37
+/Root 1 0 R
+/ID [ <5BA9F40B1A417482E0ED9D574726AA38> <5BA9F40B1A417482E0ED9D574726AA38> ]
+>>
+startxref
+9745
+%%EOF
