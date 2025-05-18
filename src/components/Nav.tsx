@@ -61,6 +61,11 @@ const Nav = () => {
       document.body.removeChild(cursor);
     };
   }, []);
+  
+  const handleResumeClick = () => {
+    // Open resume in new tab
+    window.open('/resume.html', '_blank');
+  };
 
   return (
     <header className={cn(
@@ -89,8 +94,8 @@ const Nav = () => {
             ))}
             
             <a
-              href="/ibrahim_olawale_resume.pdf"
-              download="ibrahim_olawale_resume.pdf"
+              href="/resume.html"
+              target="_blank"
               className="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
             >
               <Download className="h-4 w-4 mr-2" />
@@ -122,7 +127,6 @@ const Nav = () => {
               </DropdownMenu>
             )}
 
-            {/* Fixed the Button component - replaced with an anchor tag */}
             <a 
               href="#contact" 
               className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-all hover:shadow-md"
@@ -187,8 +191,8 @@ const Nav = () => {
               </a>
             ))}
             <a
-              href="/ibrahim_olawale_resume.pdf"
-              download="ibrahim_olawale_resume.pdf"
+              href="/resume.html"
+              target="_blank"
               className="flex items-center px-3 py-2 text-base font-medium hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

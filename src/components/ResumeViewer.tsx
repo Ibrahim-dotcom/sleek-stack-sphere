@@ -8,8 +8,8 @@ const ResumeViewer = () => {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = '/ibrahim_olawale_resume.pdf';
-    link.download = 'ibrahim_olawale_resume.pdf';
+    link.href = '/resume.html';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
