@@ -121,12 +121,13 @@ const Nav = () => {
               </DropdownMenu>
             )}
 
-            <Button 
+            {/* Fixed the Button component - replaced with an anchor tag */}
+            <a 
               href="#contact" 
               className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-all hover:shadow-md"
             >
               Get In Touch
-            </Button>
+            </a>
           </nav>
           
           {/* Mobile menu button */}
