@@ -2,17 +2,17 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { Download, Eye } from 'lucide-react';
 
 const ResumeViewer = () => {
   const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = '/resume.html';
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Create a link element with download parameter
+    window.open('/resume.html?download=true', '_blank');
+  };
+  
+  const handleView = () => {
+    // Open resume in new tab without auto-downloading
+    window.open('/resume.html', '_blank');
   };
 
   return (
@@ -59,17 +59,21 @@ const ResumeViewer = () => {
                 </div>
               </div>
               
-              <div className="flex justify-center">
+              <div className="flex justify-center gap-4">
                 <Button onClick={handleDownload} className="gap-2">
                   <Download className="h-4 w-4" />
-                  Download Full Resume
+                  Download Resume
+                </Button>
+                <Button onClick={handleView} variant="outline" className="gap-2">
+                  <Eye className="h-4 w-4" />
+                  View Resume
                 </Button>
               </div>
             </CardContent>
           </Card>
           
           <p className="mt-4 text-sm text-muted-foreground">
-            Click the button above to download the complete resume in PDF format.
+            The resume is optimized for ATS systems to help with job applications.
           </p>
         </div>
       </div>

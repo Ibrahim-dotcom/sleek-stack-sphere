@@ -10,7 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', Arial, sans-serif;
       line-height: 1.6;
       max-width: 8.5in;
       margin: 0 auto;
@@ -31,7 +31,6 @@
     }
     
     .header {
-      text-align: center;
       margin-bottom: 20px;
     }
     
@@ -50,10 +49,6 @@
     .contact-info a {
       color: #3B82F6;
       text-decoration: none;
-    }
-    
-    .contact-info a:hover {
-      text-decoration: underline;
     }
     
     .section {
@@ -110,17 +105,6 @@
       list-style: none;
     }
     
-    .skills-list li {
-      display: inline-block;
-      background-color: #EFF6FF;
-      border-radius: 3px;
-      padding: 3px 8px;
-      margin-right: 8px;
-      margin-bottom: 8px;
-      font-size: 13px;
-      color: #2563EB;
-    }
-    
     .quote {
       font-style: italic;
       color: #666;
@@ -131,15 +115,60 @@
       background-color: #F9FAFB;
     }
     
-    .divider {
-      border: 0;
-      height: 1px;
-      background: #ddd;
+    /* ATS-friendly additions */
+    .ats-section {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .keyword {
+      font-weight: normal; /* ATS prefers normal text */
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin: 15px 0;
+    }
+    
+    table td, table th {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    .print-buttons {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .print-buttons button {
+      background: #3B82F6;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 14px;
+    }
+    
+    .print-buttons button:hover {
+      background: #2563EB;
+    }
+    
+    @media print {
+      .print-buttons {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="print-buttons">
+    <button onclick="downloadAsPDF()">Download as PDF</button>
+    <button onclick="window.print()">Print Resume</button>
+  </div>
+
   <div class="header">
     <h1>IBRAHIM OLAWALE</h1>
     <p class="contact-info">
@@ -150,26 +179,24 @@
     </p>
   </div>
 
-  <hr class="divider">
-
-  <div class="section">
+  <div class="section ats-section">
     <h2>SUMMARY</h2>
     <p>
       Results-driven Full Stack Developer with 4+ years of professional experience building high-impact web applications using React, Django, JavaScript, and Python. Proven expertise in delivering scalable software, intuitive user interfaces, and robust backend systems. Passionate about crafting clean, efficient code and delivering business value through modern software engineering practices.
     </p>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>TECHNICAL SKILLS</h2>
     <ul>
-      <li><strong>Frontend</strong>: React.js, JavaScript (ES6+), TypeScript, Redux, Tailwind CSS, Bootstrap, HTML5, CSS3, Vite</li>
-      <li><strong>Backend</strong>: Python, Django REST Framework, Node.js, MySQL, PostgreSQL</li>
-      <li><strong>DevOps/Tools</strong>: Git, GitHub, Docker, Postman, VSCode</li>
-      <li><strong>Others</strong>: REST APIs, Server-Sent Events (SSE), Responsive Design, Agile, Web3</li>
+      <li><span class="keyword">Frontend</span>: React.js, JavaScript (ES6+), TypeScript, Redux, Tailwind CSS, Bootstrap, HTML5, CSS3, Vite</li>
+      <li><span class="keyword">Backend</span>: Python, Django REST Framework, Node.js, MySQL, PostgreSQL</li>
+      <li><span class="keyword">DevOps/Tools</span>: Git, GitHub, Docker, Postman, VSCode</li>
+      <li><span class="keyword">Others</span>: REST APIs, Server-Sent Events (SSE), Responsive Design, Agile, Web3</li>
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>PROFESSIONAL EXPERIENCE</h2>
     
     <h3>Adroit Solutions Ltd – Lagos, Nigeria</h3>
@@ -197,7 +224,7 @@
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>PROJECTS</h2>
     
     <h3>Dynamic ETL Tool (React + Django + PostgreSQL)</h3>
@@ -226,21 +253,21 @@
       <li>Built custom packet authentication mechanism from scratch without third-party libraries.</li>
     </ul>
 
-    <h3>Personal Portfolio Website (Coming Soon)</h3>
+    <h3>Personal Portfolio Website</h3>
     <ul>
       <li>Modern React-based portfolio featuring live demos, interactive project cards, and professional branding.</li>
-      <li>Will showcase blog articles, GitHub contributions, and contact form integration.</li>
+      <li>Showcases blog articles, GitHub contributions, and contact form integration.</li>
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>EDUCATION</h2>
     <h3>B.Sc. Computer Science</h3>
     <p>University Of Lagos (UNILAG) – Nigeria</p>
     <p class="duration">Expected Graduation: 2024, July</p>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>CERTIFICATIONS & COURSES</h2>
     <ul>
       <li>Responsive Web Design – freeCodeCamp</li>
@@ -249,7 +276,7 @@
     </ul>
   </div>
 
-  <div class="section">
+  <div class="section ats-section">
     <h2>ADDITIONAL INFORMATION</h2>
     <ul>
       <li>Open to remote, hybrid, or onsite opportunities globally.</li>
@@ -265,4 +292,3 @@
   <script src="/convert-resume.js"></script>
 </body>
 </html>
-
