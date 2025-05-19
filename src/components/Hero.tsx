@@ -37,14 +37,14 @@ const Hero = () => {
           <div className="md:w-3/5 mb-10 md:mb-0 md:pr-8">
             <p className="text-primary font-medium mb-3">Hi, my name is</p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
-              John Doe
+              Ibrahim Olawale
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-muted-foreground mb-6">
               I build exceptional digital experiences.
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl mb-8">
-              I'm a fullstack developer specializing in building (and occasionally designing) 
-              exceptional digital experiences. Currently, I'm focused on creating accessible, 
+              I'm a fullstack developer specializing in building exceptional digital experiences 
+              with React, Django, JavaScript, and Python. Currently, I'm focused on creating accessible, 
               human-centered products.
             </p>
             <div className="flex space-x-4">
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="w-full h-full bg-white rounded-full absolute top-0 left-0 flex items-center justify-center overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                  alt="John Doe" 
+                  alt="Ibrahim Olawale" 
                   className="w-full h-full object-cover"
                 />
               </div>

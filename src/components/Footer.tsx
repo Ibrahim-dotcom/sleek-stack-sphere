@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <div className="flex items-center space-x-4 mb-6">
             <a 
-              href="https://github.com/" 
+              href="https://github.com/Ibrahim-dotcom" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-background p-2 rounded-full hover:bg-primary hover:text-white transition-colors"
@@ -20,7 +20,7 @@ const Footer = () => {
               <span className="sr-only">Github</span>
             </a>
             <a 
-              href="https://linkedin.com/" 
+              href="https://www.linkedin.com/in/ibrahim-olawale-8a8228214/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-background p-2 rounded-full hover:bg-primary hover:text-white transition-colors"
@@ -86,7 +86,7 @@ const Footer = () => {
           
           <div className="text-center">
             <p className="text-muted-foreground text-sm">
-              &copy; {currentYear} John Doe. All Rights Reserved.
+              &copy; {currentYear} Ibrahim Olawale. All Rights Reserved.
             </p>
             <p className="text-xs text-muted-foreground mt-1">
               Designed & Built with ❤️
