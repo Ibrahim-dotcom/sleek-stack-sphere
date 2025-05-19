@@ -29,7 +29,7 @@ const ResumeViewer = () => {
               <div className="mb-6">
                 <h3 className="text-xl font-bold mb-2">Ibrahim Olawale</h3>
                 <p className="text-muted-foreground">
-                  Frontend & Full Stack Developer | React, Django, Python, JavaScript
+                  Full Stack Developer | React, Django, JavaScript, Python
                 </p>
               </div>
               
@@ -37,25 +37,24 @@ const ResumeViewer = () => {
                 <div>
                   <h4 className="font-bold text-lg">Summary</h4>
                   <p className="text-sm text-muted-foreground">
-                    Results-driven Full Stack Developer with 4+ years of professional experience building high-impact web applications using React, Django, JavaScript, and Python. Proven expertise in delivering scalable software, intuitive user interfaces, and robust backend systems.
+                    Full Stack Developer with 5+ years of experience developing production-grade applications using React, Django, JavaScript, and Python. Designed scalable frontends and resilient backend systems for data-heavy platforms serving over 1,000 users.
                   </p>
                 </div>
                 
                 <div>
                   <h4 className="font-bold text-lg">Technical Skills</h4>
                   <ul className="list-disc pl-5 text-sm text-muted-foreground">
-                    <li><span className="font-medium text-foreground">Frontend:</span> React.js, JavaScript (ES6+), TypeScript, Redux, Tailwind CSS</li>
-                    <li><span className="font-medium text-foreground">Backend:</span> Python, Django REST Framework, Node.js, MySQL, PostgreSQL</li>
-                    <li><span className="font-medium text-foreground">DevOps/Tools:</span> Git, GitHub, Docker, Postman, VSCode</li>
+                    <li><span className="font-medium text-foreground">Frontend:</span> React.js, JavaScript (ES6+), TypeScript, Redux, Tailwind CSS, Bootstrap, CSS3, HTML5</li>
+                    <li><span className="font-medium text-foreground">Backend:</span> Python, Django REST Framework, Node.js, PostgreSQL</li>
+                    <li><span className="font-medium text-foreground">DevOps/Tools:</span> Git, GitHub, Agile, Selenium</li>
                   </ul>
                 </div>
                 
                 <div>
                   <h4 className="font-bold text-lg">Education</h4>
                   <p className="text-sm">
-                    <span className="font-medium">B.Sc. Computer Science</span> - University Of Lagos (UNILAG), Nigeria
+                    <span className="font-medium">Bachelor's Degree in Computer Science</span>
                   </p>
-                  <p className="text-xs text-muted-foreground">Expected Graduation: 2024, July</p>
                 </div>
               </div>
               

@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -6,32 +5,32 @@ import { Badge } from '@/components/ui/badge';
 
 const timelineItems = [
   {
-    year: "2022 - Present",
-    title: "Senior Fullstack Developer",
-    company: "Tech Innovations Inc.",
-    description: "Lead development of enterprise web applications using React, Node.js, and AWS. Implemented CI/CD pipelines and mentored junior developers.",
-    technologies: ["React", "Node.js", "AWS", "MongoDB", "Docker"]
+    year: "2023 - Present",
+    title: "Full Stack Developer",
+    company: "Adroit Solutions Ltd",
+    description: "Spearheaded frontend efforts for mission-critical web apps, created and maintained REST APIs with Django, and designed real-time transaction features using Server-Sent Events (SSE).",
+    technologies: ["React", "Django", "TailwindCSS", "PostgreSQL", "SSE"]
   },
   {
-    year: "2020 - 2022",
-    title: "Frontend Developer",
-    company: "Creative Digital Agency",
-    description: "Developed responsive web applications with modern JavaScript frameworks. Worked closely with designers to implement pixel-perfect UIs.",
-    technologies: ["Vue.js", "Nuxt.js", "CSS/SCSS", "JavaScript"]
+    year: "2021 - 2023",
+    title: "Full Stack Developer",
+    company: "Freelance Software Developer",
+    description: "Launched cross-platform apps, delivered tailored business solutions for SMEs, and engineered an internal document search tool with fast indexing.",
+    technologies: ["React", "Django", "C#", "API Integration"]
   },
   {
-    year: "2018 - 2020",
-    title: "Junior Web Developer",
-    company: "Startup Ventures",
-    description: "Built and maintained websites for various clients. Implemented responsive designs and integrated CMS solutions.",
-    technologies: ["HTML/CSS", "JavaScript", "WordPress", "PHP"]
+    year: "2020",
+    title: "Full Stack Data Engineer",
+    company: "Personal Project",
+    description: "Built an asynchronous web scraping pipeline, leveraged aiohttp and asyncio for parallel data extraction, and developed genre-based classification models.",
+    technologies: ["Python", "aiohttp", "scikit-learn", "Plotly", "Matplotlib"]
   },
   {
-    year: "2018",
-    title: "Computer Science, BSc",
-    company: "University of Technology",
-    description: "Graduated with honors. Focus on software engineering and web development technologies.",
-    technologies: ["Java", "Python", "Algorithms", "Data Structures"]
+    year: "Current",
+    title: "Bachelor's Degree in Computer Science",
+    company: "",
+    description: "Studying Computer Science with a focus on software engineering and web development technologies.",
+    technologies: ["Algorithms", "Data Structures", "Software Engineering"]
   }
 ];
 
