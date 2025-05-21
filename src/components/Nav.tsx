@@ -32,15 +32,15 @@ const Nav = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Timeline", href: "#timeline" },
-    { name: "Projects", href: "#projects" },
-    { name: "Case Studies", href: "#case-studies" },
-    { name: "Skills", href: "#skills" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" }
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#about" },
+    { name: "Timeline", href: "/#timeline" },
+    { name: "Projects", href: "/#projects" },
+    { name: "Case Studies", href: "/#case-studies" },
+    { name: "Skills", href: "/#skills" },
+    { name: "Testimonials", href: "/#testimonials" },
+    { name: "Blog", href: "/#blog" },
+    { name: "Contact", href: "/#contact" }
   ];
 
   // Custom cursor styling

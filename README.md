@@ -1,7 +1,3 @@
-# Welcome to your Lovable project
-
-## Project info
-
 # My Portfolio Website
 
 A modern, modular portfolio website to showcase my projects, skills, and experience.
