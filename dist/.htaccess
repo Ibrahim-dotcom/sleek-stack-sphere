@@ -1,5 +1,0 @@
-
-<Files "ibrahim_olawale_resume.pdf">
-    Header set Content-Type "application/pdf"
-    Header set Content-Disposition "inline; filename=ibrahim_olawale_resume.pdf"
-</Files>
