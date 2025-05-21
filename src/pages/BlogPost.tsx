@@ -44,7 +44,7 @@ const blogPosts = {
     `,
     publishedDate: "May 12, 2025",
     readTime: "8 min read",
-    author: "John Doe",
+    author: "Ibrahim Olawale",
     category: "React",
     coverImage: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80",
     tags: ["React", "Performance", "Web Development", "JavaScript"]
@@ -125,7 +125,7 @@ type Point = {
     `,
     publishedDate: "Apr 28, 2025",
     readTime: "10 min read",
-    author: "John Doe",
+    author: "Ibrahim Olawale",
     category: "TypeScript",
     coverImage: "https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80",
     tags: ["TypeScript", "JavaScript", "Web Development", "Programming"]

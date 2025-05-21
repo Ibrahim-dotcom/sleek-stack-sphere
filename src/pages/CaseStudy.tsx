@@ -35,7 +35,7 @@ const caseStudies = {
     technologies: ["React", "Next.js", "Tailwind CSS", "Redux", "GraphQL", "Storybook", "Jest"],
     liveUrl: "https://fashionretail-example.com",
     testimonial: {
-      quote: "Working with John transformed our e-commerce platform. The new design is beautiful, intuitive, and has dramatically improved our conversion rates. Our customers love the new experience.",
+      quote: "Working with Ibrahim transformed our e-commerce platform. The new design is beautiful, intuitive, and has dramatically improved our conversion rates. Our customers love the new experience.",
       author: "Sarah Johnson",
       role: "Head of Digital, FashionRetail Inc."
     }
@@ -66,7 +66,7 @@ const caseStudies = {
     technologies: ["React", "Node.js", "Socket.io", "Redis", "MongoDB", "Docker", "TypeScript", "Jest"],
     liveUrl: "https://connectapp-example.com",
     testimonial: {
-      quote: "John delivered a rock-solid chat platform that exceeded our expectations. The architecture he designed has allowed us to scale effortlessly as our user base grows.",
+      quote: "Ibrahim delivered a rock-solid chat platform that exceeded our expectations. The architecture he designed has allowed us to scale effortlessly as our user base grows.",
       author: "Michael Chen",
       role: "CTO, ConnectApp Inc."
     }

@@ -133,7 +133,7 @@ const Skills = () => {
           </p>
           
           <Tabs defaultValue="frontend" className="w-full">
-            <TabsList className="grid grid-cols-3 max-w-md mx-auto mb-8">
+            <TabsList className="grid grid-cols-3 max-w-lg mx-auto mb-8">
               {skillCategories.map((category) => (
                 <TabsTrigger key={category.id} value={category.id} className="text-sm">
                   {category.title}

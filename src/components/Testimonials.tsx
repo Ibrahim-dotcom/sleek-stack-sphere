@@ -9,28 +9,28 @@ const testimonials = [
     id: 1,
     name: "Sarah Johnson",
     role: "Product Manager at TechCorp",
-    content: "John is an exceptional developer who delivered our project ahead of schedule. His attention to detail and problem-solving skills are impressive. He communicated effectively throughout the process and was always open to feedback.",
+    content: "Ibrahim is an exceptional developer who delivered our project ahead of schedule. His attention to detail and problem-solving skills are impressive. He communicated effectively throughout the process and was always open to feedback.",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80"
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "CTO at StartupX",
-    content: "Working with John was a pleasure. He quickly understood our requirements and translated them into a beautiful, functional website. His technical expertise and creative approach helped us achieve exactly what we were looking for.",
+    content: "Working with Ibrahim was a pleasure. He quickly understood our requirements and translated them into a beautiful, functional website. His technical expertise and creative approach helped us achieve exactly what we were looking for.",
     avatar: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80"
   },
   {
     id: 3,
     name: "Emily Rodriguez",
     role: "Design Director at CreativeStudio",
-    content: "John's ability to translate our design concepts into fully functional interfaces is remarkable. He has a keen eye for detail and always found ways to improve the user experience without compromising the design integrity.",
+    content: "Ibrahim's ability to translate our design concepts into fully functional interfaces is remarkable. He has a keen eye for detail and always found ways to improve the user experience without compromising the design integrity.",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80"
   },
   {
     id: 4,
     name: "David Kim",
     role: "Founder at TechStart",
-    content: "We hired John to rebuild our outdated website, and the results exceeded our expectations. He not only delivered a modern, responsive design but also improved our site's performance significantly. His work has directly contributed to an increase in user engagement.",
+    content: "We hired Ibrahim to rebuild our outdated website, and the results exceeded our expectations. He not only delivered a modern, responsive design but also improved our site's performance significantly. His work has directly contributed to an increase in user engagement.",
     avatar: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80"
   }
 ];

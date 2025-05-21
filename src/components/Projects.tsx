@@ -5,6 +5,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink, Github } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { motion } from 'framer-motion';
+import protfolio1 from '@/assets/portfolio-website-screenshot-1.png';
+import protfolio2 from '@/assets/portfolio-website-screenshot-2.png';
+import protfolio3 from '@/assets/portfolio-website-screenshot-4.png';
 
 // Define project categories
 const categories = ['All', 'Frontend', 'Backend', 'Fullstack', 'Mobile'];
@@ -22,8 +25,8 @@ const projects = [
       "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://project1.example.com",
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
+    liveUrl: "https://github.com/ibrahim-dotcom/luxe-ecommerce",
+    githubUrl: "https://github.com/ibrahim-dotcom/luxe-ecommerce",
     featured: true
   },
   {
@@ -38,8 +41,8 @@ const projects = [
       "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://project2.example.com",
-    githubUrl: "https://github.com/yourusername/task-manager",
+    liveUrl: "https://github.com/ibrahim-dotcom/pulse-task-flow",
+    githubUrl: "https://github.com/ibrahim-dotcom/pulse-task-flow",
     featured: true
   },
   {
@@ -54,8 +57,8 @@ const projects = [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://project3.example.com",
-    githubUrl: "https://github.com/yourusername/social-dashboard",
+    liveUrl: "https://github.com/ibrahim-dotcom/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: false
   },
   {
@@ -70,8 +73,8 @@ const projects = [
       "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://project4.example.com",
-    githubUrl: "https://github.com/yourusername/fitness-app",
+    liveUrl: "https://github.com/ibrahim-dotcom/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: false
   },
   {
@@ -86,8 +89,8 @@ const projects = [
       "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://project5.example.com",
-    githubUrl: "https://github.com/yourusername/api-gateway",
+    liveUrl: "https://github.com/ibrahim-dotcom/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: true
   },
   {
@@ -98,12 +101,12 @@ const projects = [
     category: "Frontend",
     imageUrl: "https://images.unsplash.com/photo-1517180452301-3fbfa84790c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1517180452301-3fbfa84790c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517180452301-3fbfa84790c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1517180452301-3fbfa84790c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      protfolio1,
+      protfolio2,
+      protfolio3
     ],
-    liveUrl: "https://yourdomain.com",
-    githubUrl: "https://github.com/yourusername/portfolio",
+    liveUrl: "https://github.com/ibrahim-dotcom/sleek-stack-sphere.git",
+    githubUrl: "https://github.com/ibrahim-dotcom/sleek-stack-sphere.git",
     featured: false
   }
 ];

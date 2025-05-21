@@ -2,6 +2,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import profilePic from '@/assets/pic3.png';
+
 
 const Hero = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -63,7 +65,8 @@ const Hero = () => {
               <div className="w-full h-full bg-gradient-to-tr from-primary/20 to-primary/5 rounded-full absolute top-0 left-0 transform translate-x-4 translate-y-4"></div>
               <div className="w-full h-full bg-white rounded-full absolute top-0 left-0 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  // src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src={profilePic}
                   alt="Ibrahim Olawale" 
                   className="w-full h-full object-cover"
                 />

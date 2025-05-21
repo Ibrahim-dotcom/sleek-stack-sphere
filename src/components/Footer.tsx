@@ -88,9 +88,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">
               &copy; {currentYear} Ibrahim Olawale. All Rights Reserved.
             </p>
-            <p className="text-xs text-muted-foreground mt-1">
-              Designed & Built with ❤️
-            </p>
+
           </div>
         </div>
       </div>
