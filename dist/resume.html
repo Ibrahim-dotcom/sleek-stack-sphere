@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Olawale - Resume</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.75in 0.5in;
+      color: #333;
+      background: white;
+    }
+    
+    /* Print styles */
+    @media print {
+      body {
+        padding: 0;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+    
+    .header {
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #1a1a1a;
+    }
+    
+    .contact-info {
+      font-size: 14px;
+      margin: 8px 0;
+      color: #444;
+    }
+    
+    .contact-info a {
+      color: #3B82F6;
+      text-decoration: none;
+    }
+    
+    .section {
+      margin: 18px 0;
+    }
+    
+    h2 {
+      font-size: 16px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ddd;
+      color: #2563EB;
+      text-transform: uppercase;
+      margin: 14px 0 10px;
+    }
+    
+    h3 {
+      font-size: 16px;
+      margin: 12px 0 4px;
+      color: #1F2937;
+    }
+    
+    h4 {
+      font-size: 14px;
+      margin: 10px 0 4px;
+      font-weight: 600;
+      color: #4B5563;
+    }
+    
+    .position {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    
+    .duration {
+      font-style: italic;
+      color: #666;
+      font-size: 14px;
+      margin: 0 0 8px;
+    }
+    
+    ul {
+      margin-top: 6px;
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    
+    .skills-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .quote {
+      font-style: italic;
+      color: #666;
+      text-align: center;
+      margin: 20px 0;
+      padding: 10px;
+      border-left: 4px solid #3B82F6;
+      background-color: #F9FAFB;
+    }
+    
+    /* ATS-friendly additions */
+    .ats-section {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .keyword {
+      font-weight: normal; /* ATS prefers normal text */
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    
+    table td, table th {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    .print-buttons {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
+    .print-buttons button {
+      background: #3B82F6;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 14px;
+    }
+    
+    .print-buttons button:hover {
+      background: #2563EB;
+    }
+    
+    @media print {
+      .print-buttons {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-buttons">
+    <button onclick="downloadAsPDF()">Download as PDF</button>
+    <button onclick="window.print()">Print Resume</button>
+  </div>
+
+  <div class="header">
+    <h1>IBRAHIM OLAWALE</h1>
+    <p class="contact-info">
+      Full Stack Developer | React, Django, JavaScript, Python<br>
+      Lagos, Nigeria | +234 909 108 2232 | <a href="mailto:ibrahimolawale580@gmail.com">ibrahimolawale580@gmail.com</a> | 
+      <a href="https://github.com/Ibrahim-dotcom">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/ibrahim-olawale-8a8228214/">LinkedIn</a>
+    </p>
+  </div>
+
+  <div class="section ats-section">
+    <h2>SUMMARY</h2>
+    <p>
+      Full Stack Developer with 5+ years of experience developing production-grade applications using React, Django, JavaScript,
+      and Python. Designed scalable frontends and resilient backend systems for data-heavy platforms serving over 1,000 users.
+      Built ETL pipelines, integrated third-party APIs, and developed tools supporting business-critical workflows.
+      Launched features from concept to release, partnered with cross-functional teams, and enhanced performance—cutting page
+      load times by 40%. Wrote maintainable, well-tested code with modular architecture, leading to a 30% reduction in technical debt.
+      Translates complex business needs into robust technical solutions across dashboards, data visualizations, async processing,
+      and AI-enabled tools.
+    </p>
+  </div>
+
+  <div class="section ats-section">
+    <h2>SKILLS</h2>
+    <p>
+      React.js, Tailwind CSS, Django, Javascript, CSS, Typescript, PostgreSQL, HTML5, Django Rest Framework, Node.js, APIs, Redux,
+      Bootstrap, CSS3, Agile, Selenium
+    </p>
+  </div>
+
+  <div class="section ats-section">
+    <h2>EXPERIENCE</h2>
+    
+    <h3>Adroit Solutions Ltd – Remote</h3>
+    <p class="position">Full Stack Developer</p>
+    <p class="duration">March 2023 – Present</p>
+    <ul>
+      <li>Spearheaded frontend efforts for 4+ mission-critical web apps using React, TailwindCSS, and Bootstrap, boosting user
+          engagement by 25% and reducing loading time by 45%.</li>
+      <li>Created and maintained 15+ REST APIs with Django and DRF, powering over 100,000 API requests monthly across
+          internal systems.</li>
+      <li>Designed real-time transaction features using Server-Sent Events (SSE), ensuring seamless sync for 10,000+
+          concurrent users and cutting latency by 60%.</li>
+      <li>Converted 50+ Figma wireframes into responsive, optimized UI components—decreasing bounce rates by 30% and
+          improving session duration by 45%.</li>
+      <li>Developed a scalable React component library that accelerated feature delivery by 30% and simplified maintenance
+          across codebases.</li>
+      <li>Tuned PostgreSQL and MySQL queries, resulting in 40% faster response times and 99.99% database uptime.</li>
+      <li>Contributed 12+ story points per Agile sprint and played a key role in 6 major product releases over 12 months.</li>
+      <li>Trained and mentored 5+ junior developers and interns—cutting onboarding time by half and improving team
+          productivity by 35%.</li>
+      <li>Led a team of 4 engineers, conducting code reviews and sprint retrospectives that increased sprint velocity by 25%.</li>
+    </ul>
+
+    <h3>Freelance Software Developer – Remote</h3>
+    <p class="position">Full Stack Developer</p>
+    <p class="duration">January 2021 – February 2023</p>
+    <ul>
+      <li>Launched 5+ cross-platform apps, collectively used by 20,000+ users—boosting workflow efficiency for clients by 35%.</li>
+      <li>Delivered tailored business solutions for 6+ SMEs using React and Django, automating processes and cutting manual
+          work by 40%.</li>
+      <li>Engineered a C#-based internal document search tool with fast indexing—achieving sub-300ms response times on
+          large datasets.</li>
+      <li>Integrated secure third-party services (e.g., payments, analytics) with APIs that maintained 99.9% uptime and met
+          data privacy standards.</li>
+      <li>Created pixel-perfect, responsive UIs that raised user satisfaction scores by 25% and halved design revision cycles.</li>
+      <li>Advised clients on system architecture and cost optimization, reducing infrastructure expenses by 20% and improving
+          onboarding experiences.</li>
+    </ul>
+
+    <h3>Personal Project – Lagos, Nigeria</h3>
+    <p class="position">Full Stack Data Engineer</p>
+    <p class="duration">January 2020 – February 2020</p>
+    <ul>
+      <li>Built an asynchronous web scraping pipeline that extracted structured data (ratings, cast, reviews) from 50,000+ movie
+          entries.</li>
+      <li>Leveraged aiohttp, asyncio, and BeautifulSoup to parallelize data extraction, cutting scraping time by 75%.</li>
+      <li>Developed a genre-based classification model in scikit-learn using sentiment scores and cast metrics—achieving 85%
+          accuracy.</li>
+      <li>Generated complex data patterns and visualizations with Plotly and Matplotlib to uncover genre trends, user
+          preferences, and engagement shifts.</li>
+      <li>Introduced a dashboard for users to explore categorized movie data and query filters—attracting 200+ users in its first
+          release.</li>
+    </ul>
+  </div>
+
+  <div class="section ats-section">
+    <h2>PROJECTS</h2>
+    
+    <h3>Dynamic ETL Tool (React + Django + PostgreSQL)</h3>
+    <ul>
+      <li>Built a fully functional ETL platform with a React frontend and Django backend.</li>
+      <li>Users can extract from databases/APIs/files, apply transformations, and load to destinations.</li>
+      <li>Features include custom condition builders, column mapping, connection manager, and live job tracking.</li>
+    </ul>
+
+    <h3>AI-Powered Data Analytics Dashboard</h3>
+    <ul>
+      <li>Developed an analytics platform that processes 50,000+ records daily with minimal latency.</li>
+      <li>Implemented interactive visualizations with React and D3.js for complex business metrics.</li>
+      <li>Integrated machine learning models for predictive analytics and anomaly detection.</li>
+    </ul>
+
+    <h3>SQL Visual Query Builder</h3>
+    <ul>
+      <li>Created a drag-and-drop SQL builder with table relations, graphical joins, and real-time query generation.</li>
+      <li>Integrated with PostgreSQL and displayed results using responsive data tables.</li>
+      <li>Added query optimization suggestions that improved execution plans by 30%.</li>
+    </ul>
+  </div>
+
+  <div class="section ats-section">
+    <h2>EDUCATION</h2>
+    <h3>Bachelor's Degree in Computer Science</h3>
+  </div>
+
+  <div class="quote">
+    "Code with intention, build with purpose."
+  </div>
+  
+  <script src="/convert-resume.js"></script>
+</body>
+</html>
