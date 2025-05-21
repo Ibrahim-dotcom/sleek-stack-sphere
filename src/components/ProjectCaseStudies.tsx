@@ -140,9 +140,11 @@ const ProjectCaseStudies = () => {
           </div>
           
           <div className="text-center mt-16">
-            <Button variant="outline" size="lg" className="group">
-              View All Case Studies
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <Button variant="outline" size="lg" className="group" asChild>
+              <Link to="/case-studies">
+                View All Case Studies
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
           </div>
         </div>

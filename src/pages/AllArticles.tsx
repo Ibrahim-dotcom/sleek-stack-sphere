@@ -1,11 +1,14 @@
 
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 
+// Using the same blog posts data from Blog.tsx
 const blogPosts = [
   {
     id: 1,
@@ -46,6 +49,26 @@ const blogPosts = [
     category: "CSS",
     slug: "mastering-css-grid",
     coverImage: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 5,
+    title: "Modern State Management with Redux Toolkit",
+    excerpt: "Simplify your Redux code with Redux Toolkit's powerful utilities and best practices approach.",
+    date: "Jan 18, 2025",
+    readTime: "9 min read",
+    category: "Redux",
+    slug: "redux-toolkit-guide",
+    coverImage: "https://images.unsplash.com/photo-1616624757738-0a868f1c8a8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 6,
+    title: "Building a Design System with Figma and React",
+    excerpt: "Create a cohesive design system that bridges design and development for consistent user experiences.",
+    date: "Dec 05, 2024",
+    readTime: "11 min read",
+    category: "Design",
+    slug: "design-system-figma-react",
+    coverImage: "https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -90,63 +113,37 @@ const BlogPost = ({ post, index }) => {
   );
 };
 
-const Blog = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
+const AllArticles = () => {
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          sectionRef.current?.classList.add('is-visible');
-        }
-      },
-      { threshold: 0.1 }
-    );
-    
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    window.scrollTo(0, 0);
   }, []);
 
   return (
-    <section id="blog" className="py-16 md:py-24 bg-secondary/30 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-primary/10 rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-primary/5 rounded-full filter blur-3xl"></div>
-      </div>
-      
-      <div className="section-container relative z-10">
-        <div ref={sectionRef} className="animate-on-scroll">
-          <h2 className="section-title">Latest Articles</h2>
-          <p className="section-subtitle">
-            Thoughts, insights, and tutorials on web development and design
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-            {blogPosts.map((post, index) => (
-              <BlogPost key={post.id} post={post} index={index} />
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="group" asChild>
-              <Link to="/articles">
-                View All Articles
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-          </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <div className="section-container py-16 md:py-24 mt-16">
+        <div className="mb-8 flex items-center">
+          <Button variant="ghost" asChild className="mr-4">
+            <Link to="/" className="flex items-center">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Link>
+          </Button>
+        </div>
+        <h1 className="text-4xl font-bold mb-6">All Articles</h1>
+        <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
+          Thoughts, insights, and tutorials on web development, design, and software engineering.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post, index) => (
+            <BlogPost key={post.id} post={post} index={index} />
+          ))}
         </div>
       </div>
-    </section>
+      <Footer />
+    </div>
   );
 };
 
-export default Blog;
+export default AllArticles;
