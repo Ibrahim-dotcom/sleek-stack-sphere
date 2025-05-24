@@ -25,8 +25,8 @@ const projects = [
       "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://github.com/ibrahim-dotcom/luxe-ecommerce",
-    githubUrl: "https://github.com/ibrahim-dotcom/luxe-ecommerce",
+    liveUrl: "https://luxe-fashion.netlify.app/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: true
   },
   {
@@ -41,8 +41,8 @@ const projects = [
       "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
     ],
-    liveUrl: "https://github.com/ibrahim-dotcom/pulse-task-flow",
-    githubUrl: "https://github.com/ibrahim-dotcom/pulse-task-flow",
+    liveUrl: "https://github.com/ibrahim-dotcom/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: true
   },
   {
@@ -105,8 +105,8 @@ const projects = [
       protfolio2,
       protfolio3
     ],
-    liveUrl: "https://github.com/ibrahim-dotcom/sleek-stack-sphere.git",
-    githubUrl: "https://github.com/ibrahim-dotcom/sleek-stack-sphere.git",
+    liveUrl: "https://ibrahimolawale.netlify.app/",
+    githubUrl: "https://github.com/ibrahim-dotcom/",
     featured: false
   }
 ];
