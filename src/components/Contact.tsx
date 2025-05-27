@@ -5,6 +5,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin } from 'lucide-react';
+import emailjs from '@emailjs/browser'; 
+
 
 const Contact = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -46,23 +48,42 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    // Prepare the email parameters
+    const templateParams = {
+      from_name: formState.name,
+      from_email: formState.email,
+      subject: formState.subject,
+      message: formState.message,
+    };
+
+    emailjs.send(
+      'service_0if2hwq',
+      'template_pw2s0ch',
+      templateParams,
+      'BCsXF6x2L1ijiAX1P'
+    )
+      .then((result) => {  console.log(result.text);
+            toast({
+              title: "Message sent!",
+              description: "Thanks for reaching out. I'll get back to you soon.",
+            });            
+            setFormState({
+              name: '',
+              email: '',
+              subject: '',
+              message: '',
+            });
+      
+            setIsSubmitting(false);
+          }, (error) => {
+            console.log(error.text);
+            toast({
+              title: "Failed To send message!",
+              description: "please try again or contact us through other means on this contact page",
+            });  
+
+          });
     
-    // Simulate form submission with timeout
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thanks for reaching out. I'll get back to you soon.",
-      });
-      
-      setFormState({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-      
-      setIsSubmitting(false);
-    }, 1000);
   };
   
   return (

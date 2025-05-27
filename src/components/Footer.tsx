@@ -29,7 +29,7 @@ const Footer = () => {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a 
-              href="https://twitter.com/" 
+              href="https://x.com/ibrahim_olawal"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-background p-2 rounded-full hover:bg-primary hover:text-white transition-colors"
